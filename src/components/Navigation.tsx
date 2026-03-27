@@ -49,6 +49,7 @@ const Navigation = () => {
           display: 'flex',
           gap: '2.5rem',
           listStyle: 'none',
+          alignItems: 'center',
         }}
       >
         {['About', 'Skills', 'Projects', 'Certifications', 'Contact'].map((item) => (
@@ -76,6 +77,38 @@ const Navigation = () => {
             </a>
           </li>
         ))}
+        <li>
+          <a
+            href="/CV.pdf"
+            download="CV.pdf"
+            style={{
+              fontSize: '0.875rem',
+              fontWeight: 600,
+              letterSpacing: '0.04em',
+              color: '#ffffff',
+              textDecoration: 'none',
+              textTransform: 'uppercase',
+              padding: '0.5rem 1rem',
+              border: '1px solid rgba(255, 255, 255, 0.3)',
+              borderRadius: '0.375rem',
+              background: 'rgba(255, 255, 255, 0.1)',
+              transition: 'all 0.3s',
+              display: 'inline-block',
+            }}
+            onMouseEnter={(e) => {
+              const target = e.target as HTMLElement;
+              target.style.background = 'rgba(255, 255, 255, 0.2)';
+              target.style.borderColor = 'rgba(255, 255, 255, 0.5)';
+            }}
+            onMouseLeave={(e) => {
+              const target = e.target as HTMLElement;
+              target.style.background = 'rgba(255, 255, 255, 0.1)';
+              target.style.borderColor = 'rgba(255, 255, 255, 0.3)';
+            }}
+          >
+            Download CV
+          </a>
+        </li>
       </ul>
     </nav>
   );
