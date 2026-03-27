@@ -17,14 +17,14 @@ const ParticleCanvas = () => {
     const colors = ['255,255,255', '200,200,200', '150,150,150', '100,100,100'];
 
     class Particle {
-      x: number;
-      y: number;
-      r: number;
-      vx: number;
-      vy: number;
-      color: string;
-      life: number;
-      decay: number;
+      x: number = 0;
+      y: number = 0;
+      r: number = 0;
+      vx: number = 0;
+      vy: number = 0;
+      color: string = '';
+      life: number = 0;
+      decay: number = 0;
 
       constructor() {
         this.reset();

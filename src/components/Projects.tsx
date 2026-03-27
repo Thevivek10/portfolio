@@ -1,4 +1,4 @@
-gitimport { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import hireflowImg from '../assets/Screenshot 2026-03-27 004021.png';
 import petcareImg from '../assets/Screenshot 2026-03-27 004156.png';
 import navigatorImg from '../assets/Screenshot 2025-04-24 134319.png';
@@ -118,7 +118,6 @@ const Projects = () => {
                 transition: 'transform 0.4s cubic-bezier(.23,1,.32,1), box-shadow 0.4s',
                 position: 'relative',
                 overflow: 'hidden',
-                group: 'one',
               }}
               onMouseEnter={(e) => {
                 (e.currentTarget as HTMLElement).style.transform = 'translateX(6px)';
