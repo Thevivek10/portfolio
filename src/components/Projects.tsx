@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+gitimport { useEffect, useRef } from 'react';
 import hireflowImg from '../assets/Screenshot 2026-03-27 004021.png';
 import petcareImg from '../assets/Screenshot 2026-03-27 004156.png';
 import navigatorImg from '../assets/Screenshot 2025-04-24 134319.png';
