@@ -1,0 +1,52 @@
+/* Responsive styles for portfolio components */
+
+@media (max-width: 768px) {
+  nav {
+    padding: 1rem 1.5rem;
+  }
+
+  nav .nav-links {
+    display: none;
+  }
+
+  #hero {
+    padding: 5rem 1.5rem 3rem;
+  }
+
+  #about,
+  #skills,
+  #projects,
+  #certs,
+  #achievements,
+  #education,
+  #contact {
+    padding: 5rem 1.5rem;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .skills-orb {
+    width: 280px;
+    height: 280px;
+  }
+
+  .ach-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    grid-template-columns: 1fr;
+  }
+
+  .proj-links {
+    flex-direction: row;
+  }
+
+  .proj-screenshot {
+    height: 150px;
+  }
+}
+
